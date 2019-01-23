@@ -80,8 +80,8 @@
             'url' : '/balanceinquiry',
             'type' : 'GET',            
             'success' : function(data) {                              
-                $("#atmScreen").html("<p style='margin-top:0px;'>Available for withdrawl:" + data.Balance + "<br><br>You may be interested in this offer?</p>" + data.Body); 
-
+                //$("#atmScreen").html("<p style='margin-top:0px;'>Available for withdrawl:" + data.Balance + "<br><br>You may be interested in this offer?</p>" + data.Body); 
+                  $("#atmScreen").html("<p style='margin-top:0px;'>Available for withdrawl:" + data.Balance + "<br><br>You may be interested in this offer?</p>" + "<img src='https://lh3.googleusercontent.com/-k6iJIt-3PKM/XEetfHe1l4I/AAAAAAAAAzI/wpt1RfrIlB80x4K5ifmQjvaxJTJ3w-G3wCL0BGAYYCw/h175/santanderbanner.jpg'>"); 
             },
             'error' : function(request,error)
             {
