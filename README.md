@@ -45,4 +45,4 @@ Setup:
 Deploy this app to your heroku Instance. 
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jeremywrags/ATM.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lozanoc81/ATM.git)
