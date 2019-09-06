@@ -9,7 +9,7 @@ console.log('ClientID: ' + process.env.CustomerKey);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'ATM Example' });
+  res.render('index', { title: 'ATM Falabella' });
 });
 
 /* GET home page. */
