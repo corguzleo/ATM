@@ -70,12 +70,12 @@
           $("#atmScreen").html("Enter Your Pin: ");
         }
         if ( $( this ).hasClass( "atmenter" ) ) {
-          $("#atmScreen").html("<p style='margin-top:0px;'>Balance Inquiry</p> ");
+          $("#atmScreen").html("<p style='margin-top:0px;'>Deposit</p> ");
           $("#atmScreen").append("<p style='margin-top:40px;'>Withdrawl</p> ");
-          $("#atmScreen").append("<p style='margin-top:40px;'>Deposit</p> ");
+          $("#atmScreen").append("<p style='margin-top:40px;'>Balance Inquiry</p> ");
           $("#atmScreen").append("<p style='margin-top:40px;'>Offers</p> ");
         }
-        if ( $( this ).hasClass( "atmbalance" ) ) {
+        if ( $( this ).hasClass( "atmbalance" )) {
           $.ajax({
             'url' : '/balanceinquiry',
             'type' : 'GET',            
