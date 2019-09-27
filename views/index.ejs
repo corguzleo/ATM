@@ -81,7 +81,7 @@
             'type' : 'GET',            
             'success' : function(data) {                              
                 //$("#atmScreen").html("<p style='margin-top:0px;'>Available for withdrawl:" + data.Balance + "<br><br>You may be interested in this offer?</p>" + data.Body); 
-                  $("#atmScreen").html("<p style='margin-top:0px;'>Está por depositar un total de $5000 en su caja de ahorro: " + data.Balance + "<br><br>Le podría interesar:</p>" + "<img src='https://fotos.subefotos.com/4c1a2bdb1aafeb82e8e5365d7af4a31fo.jpg'>"); 
+                  $("#atmScreen").html("<p style='margin-top:0px;'>Está por depositar un total de $5000 en su caja de ahorro, con saldo: " + data.Balance + "<br><br>Le podría interesar:</p>" + "<img src='https://fotos.subefotos.com/4c1a2bdb1aafeb82e8e5365d7af4a31fo.jpg'>"); 
             },
             'error' : function(request,error)
             {
