@@ -81,8 +81,7 @@
             'type' : 'GET',            
             'success' : function(data) {                              
                 //$("#atmScreen").html("<p style='margin-top:0px;'>Available for withdrawl:" + data.Balance + "<br><br>You may be interested in this offer?</p>" + data.Body); 
-                  $("#atmScreen").html("<p style='margin-top:0px;'>Está por retirar un total de $5000 de su cuenta bancaria, con terminacion **1234 " + "<br>"); 
-                  $("#atmScreen").html("<p style='margin-top:0px;'>Saldo: " + data.Balance + "<br><br>Le podría interesar:</p>" + "<img src='https://i.ibb.co/5W4Zvry/banner-atm.jpg'>"); 
+                  $("#atmScreen").html("<p style='margin-top:0px;'>Está por retirar un total de $5000 de su cuenta bancaria, con terminacion **1234 " + "<br>Saldo: " + data.Balance + "<br>Le podría interesar:</p>" + "<img src='https://i.ibb.co/5W4Zvry/banner-atm.jpg'>"); 
             },
             'error' : function(request,error)
             {
