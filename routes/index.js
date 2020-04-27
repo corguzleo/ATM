@@ -7,9 +7,13 @@ console.log('ClientID: ' + process.env.ClientSeceret);
 console.log('ClientID: ' + process.env.CustomerKey);
 
 
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'ATM Banorte' });
+  let messageTxt = process.env.MESSAGE_TXT;
+  let imageUrl = process.env.IMAGE_URL;
+  res.render('index', { title: 'ATM Banorte', msgtxt : messageTxt, imageUrl : imageUrl });
+  
 });
 
 /* GET home page. */
