@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
   let messageTxt = process.env.MESSAGE_TXT;
   let imageUrl = process.env.IMAGE_URL;
   let logoURL = process.env.LOGO_URL;
-  res.render('index', { title: 'ATM Banorte', msgtxt : messageTxt, imageUrl : imageUrl, logoURL : logoURL });
+  res.render('index', { title: 'ATM Banorte', msgTxt : messageTxt, imageUrl : imageUrl, logoURL : logoURL });
   
 });
 
