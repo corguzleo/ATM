@@ -12,7 +12,8 @@ console.log('ClientID: ' + process.env.CustomerKey);
 router.get('/', function(req, res, next) {
   let messageTxt = process.env.MESSAGE_TXT;
   let imageUrl = process.env.IMAGE_URL;
-  res.render('index', { title: 'ATM Banorte', msgtxt : messageTxt, imageUrl : imageUrl });
+  let logoURL = process.env.LOGO_URL;
+  res.render('index', { title: 'ATM Banorte', msgtxt : messageTxt, imageUrl : imageUrl, logoURL : logoURL });
   
 });
 
