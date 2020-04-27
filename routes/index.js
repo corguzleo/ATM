@@ -13,7 +13,9 @@ router.get('/', function(req, res, next) {
   let messageTxt = process.env.MESSAGE_TXT;
   let imageUrl = process.env.IMAGE_URL;
   let logoURL = process.env.LOGO_URL;
-  res.render('index', { title: 'ATM Banorte', msgTxt : messageTxt, imageUrl : imageUrl, logoURL : logoURL });
+  let atmWrapperBorderColor = process.env.ATM_W_BORDERCOLOR;
+  let atmWrapperBackGColor = process.env.ATM_W_BORDERCOLOR;
+  res.render('index', { title: 'ATM Banorte', msgTxt : messageTxt, imageUrl : imageUrl, logoURL : logoURL, atmWrapperBorderColor : atmWrapperBorderColor,  atmWrapperBackGColor: atmWrapperBackGColor});
   
 });
 
