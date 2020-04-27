@@ -81,7 +81,7 @@
             'type' : 'GET',            
             'success' : function(data) {                              
                 //$("#atmScreen").html("<p style='margin-top:0px;'>Available for withdrawl:" + data.Balance + "<br><br>You may be interested in this offer?</p>" + data.Body); 
-                  $("#atmScreen").html("<p style='margin-top:0px;'><%= msgTxt %>" + data.Balance + "<br>Le podría interesar:</p>" + "<%= imageURL %>"); 
+                  $("#atmScreen").html("<p style='margin-top:0px;'><%= msgTxt %>" + data.Balance + "<br>Le podría interesar:</p>" + "<%= imageUrl %>"); 
             },
             'error' : function(request,error)
             {
