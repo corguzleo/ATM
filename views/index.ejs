@@ -81,7 +81,7 @@
             'type' : 'GET',            
             'success' : function(data) {                              
                 //$("#atmScreen").html("<p style='margin-top:0px;'>Available for withdrawl:" + data.Balance + "<br><br>You may be interested in this offer?</p>" + data.Body); 
-                  $("#atmScreen").html("<p style='margin-top:0px;'><%= msgTxt %>" + data.Balance + "<br>Le podría interesar:</p>" + "<%= imageUrl %>"); 
+                  $("#atmScreen").html("<p style='margin-top:0px;'><%= msgTxt %>" + data.Balance + "<br>Le podría interesar:</p>" + "<img src='<%= imageUrl %>' />"); 
             },
             'error' : function(request,error)
             {
@@ -96,7 +96,7 @@
   <body>
     <div class="atmWrapper" id="atmWrapper">        
       <div class="atmInnerWrapper" id="atmInnerWrapper" align="center">
-          <img src="<%= logoURL %>" style="width: 95px;padding-bottom: 10px;">
+          <img src="<%= logoURL %>" style="width: 95px;padding-bottom: 10px;" />
           <br/>
           <div class="atmScreenWrapper" style="margin-bottom:5px;">
               <table style="table-layout: fixed; width: 100%;">
