@@ -21,11 +21,11 @@
       },
       "LOGO_URL": {
         "description": "Please provide the logo image URL.",
-        "value": "<img src='https://i.ibb.co/pdmCbXP/colorlogo-vector-banorte.jpg'/>"
+        "value": "https://i.ibb.co/pdmCbXP/colorlogo-vector-banorte.jpg"
       },
       "IMAGE_URL": {
         "description": "Please provide the Offer image URL.",
-        "value": "<img src='https://i.ibb.co/5W4Zvry/banner-atm.jpg' />"
+        "value": "https://i.ibb.co/5W4Zvry/banner-atm.jpg"
       },
       "MESSAGE_TXT": {
         "description": "Please provide the atm message when the offer will show it",
