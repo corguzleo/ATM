@@ -30,6 +30,14 @@
       "MESSAGE_TXT": {
         "description": "Please provide the atm message when the offer will show it",
         "value": "Está por retirar $5000 de su cuenta bancaria, con terminacion **1234, con Saldo:"
+      },
+      "ATM_W_BORDERCOLOR": {
+        "description": "Please provide the hex color for Border ATMWrapper ",
+        "value": "#E20F2F"
+      },
+      "ATM_W_BACKGCOLOR": {
+        "description": "Please provide the hex color for Background ATMWrapper",
+        "value": "#f4dee1"
       }
     }
   }
