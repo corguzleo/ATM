@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
   let logoURL = process.env.LOGO_URL;
   let atmWrapperBorderColor = process.env.ATM_W_BORDERCOLOR;
   let atmWrapperBackGColor = process.env.ATM_W_BORDERCOLOR;
-  res.render('index', { title: 'ATM Banorte', msgTxt : messageTxt, imageUrl : imageUrl, logoURL : logoURL, atmWrapperBorderColor : atmWrapperBorderColor,  atmWrapperBackGColor: atmWrapperBackGColor});
+  res.render('index', { title: 'ATM Azteca', msgTxt : messageTxt, imageUrl : imageUrl, logoURL : logoURL, atmWrapperBorderColor : atmWrapperBorderColor,  atmWrapperBackGColor: atmWrapperBackGColor});
   
 });
 
@@ -50,12 +50,12 @@ router.get('/balanceinquiry', function(req, res, next) {
         var d = new Buffer(body.optimizations[0].data, 'base64').toString('ascii');
         res.send({ 
           Body: d,  
-          Balance: '$35,324' 
+          Balance: '$15,324' 
         });
       }catch(exception){
         res.send({ 
           Body: "No optimizations were returned at this time.",  
-          Balance: '$35,324' 
+          Balance: '$15,324' 
         });
       }
       
