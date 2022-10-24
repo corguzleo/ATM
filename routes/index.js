@@ -50,12 +50,12 @@ router.get('/balanceinquiry', function(req, res, next) {
         var d = new Buffer(body.optimizations[0].data, 'base64').toString('ascii');
         res.send({ 
           Body: d,  
-          Balance: '$15,324' 
+          Balance: process.env.BALANCE 
         });
       }catch(exception){
         res.send({ 
           Body: "No optimizations were returned at this time.",  
-          Balance: '$15,324' 
+          Balance: process.env.BALANCE 
         });
       }
       
