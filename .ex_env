@@ -1,0 +1,10 @@
+ClientID=This is your Interaction Studio Client ID
+ClientSeceret=This is your ClientSeceret
+CustomerKey=This is your CustomerKey
+LOGO_URL=http://localhost:5001/images/atmlogo.png
+IMAGE_URL=http://localhost:5001/images/banner_atm.jpg
+MESSAGE_TXT=Está por retirar $5000 de su cuenta bancaria, con terminacion **1234, con Saldo:
+ATM_W_BORDERCOLOR=#E20F2F
+ATM_W_BACKGCOLOR=#f4dee1
+TitleATM=ATM Demo
+BALANCE=123,123.00

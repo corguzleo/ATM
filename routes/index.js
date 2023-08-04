@@ -3,19 +3,21 @@ var router = express.Router();
 var request = require("request");
 var config = require('config');
 console.log('ClientID: ' + process.env.ClientID);
-console.log('ClientID: ' + process.env.ClientSeceret);
-console.log('ClientID: ' + process.env.CustomerKey);
+console.log('ClientSeceret: ' + process.env.ClientSeceret);
+console.log('CustomerKey: ' + process.env.CustomerKey);
+console.log('TitleATM: ' + process.env.TitleATM);
 
 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   let messageTxt = process.env.MESSAGE_TXT;
+  let titleATM = process.env.TitleATM;
   let imageUrl = process.env.IMAGE_URL;
   let logoURL = process.env.LOGO_URL;
   let atmWrapperBorderColor = process.env.ATM_W_BORDERCOLOR;
   let atmWrapperBackGColor = process.env.ATM_W_BORDERCOLOR;
-  res.render('index', { title: 'ATM Azteca', msgTxt : messageTxt, imageUrl : imageUrl, logoURL : logoURL, atmWrapperBorderColor : atmWrapperBorderColor,  atmWrapperBackGColor: atmWrapperBackGColor});
+  res.render('index', { title: titleATM, msgTxt : messageTxt, imageUrl : imageUrl, logoURL : logoURL, atmWrapperBorderColor : atmWrapperBorderColor,  atmWrapperBackGColor: atmWrapperBackGColor});
   
 });
 
